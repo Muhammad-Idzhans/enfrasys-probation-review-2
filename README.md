@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Probation Review Web Development Style Slides
 
-## Getting Started
+### Content:
+- Introduction
+- Evaluation Form
+- Work I have done that relates to client
+- Self Discovery (Research)
+- Exam
+- Work Challenges
+- Experience & Growth
+- What's Next?
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+/introduction
+/evaluation-form
+/client-related-work
+- NAPIC document generator
+- Task
+- Tech used
+- Original Document
+- Final current outcome
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/self-discovery
+- Attending vLLM
+- Discover NextJS
+- Keycloak
+- Ant Design
+- Ant Charts Design
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+/work-challenges
+- Only me working on AI (Azure AI Foundry) specifically in my team: No kawan to do work and stress together. A guidance from mentor would be beneficial.
+- No real project assigned to me that much. Mostly is just a POC or self-discovery that was asked by Choo Hoong.
+- So far currently only me doing things related to development. A guidance/mentor in this field (soft dev) to guide me would be better.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/experience-growth
+- Comparison from Day 1 to today.
+- Attend vLLM Malaysia day.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+/what-next
+- Attending again AI-103 exam for certification.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+NAPIC (JPPH), also known as National Property Information Centre (Pusat Maklumat Harta Tanah Negara) is ..... Every year or quater of year, they will release their Laporan Stok Harta Tanah. 
 
-## Deploy on Vercel
+These documents where typed manually everytime a new report is being made.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Zainal Asyraf** approached me and asked me is there any possibilities of the capability to use Azure AI Foundry Generative Model, to generate their report with the exact template.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Due to the inability of the model itself to generate a report on it's own with limited tokens, I come out with a solution where we will use the generative model to only write, translate and also generative HTML version of the report. Then we convert it into PDF, and then convert it to docx for any editing.
+
+The application is using python flask application and deployed at Azure Web App as host.
+
